@@ -101,13 +101,13 @@ export default {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  padding: 1rem;
+  padding: 0.3rem;
 
 }
 
 .nova-grid-field-label {
   font-weight: 200;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.1rem;
   width: 100%;
 }
 
