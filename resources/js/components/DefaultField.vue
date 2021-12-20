@@ -107,7 +107,7 @@ export default {
 
 .nova-grid-field-label {
   font-weight: 200;
-  margin-bottom: 0.1rem;
+  margin-bottom: 0.4rem;
   width: 100%;
 }
 
