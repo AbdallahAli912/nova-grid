@@ -673,6 +673,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
 
 
 
@@ -10977,21 +10978,25 @@ var render = function() {
             { class: _vm.fieldLabelClasses },
             [
               _vm._t("default", [
-                _c(
-                  "form-label",
-                  {
-                    class: { "mb-2": _vm.showHelpText && _vm.field.helpText },
-                    attrs: { "label-for": _vm.field.attribute }
-                  },
-                  [
-                    _vm._v("\n            " + _vm._s(_vm.fieldLabel) + " "),
-                    _vm.field.required
-                      ? _c("span", { staticClass: "text-danger text-sm" }, [
-                          _vm._v(_vm._s(_vm.__("*")))
-                        ])
-                      : _vm._e()
-                  ]
-                )
+                _vm.fieldLabel != ""
+                  ? _c(
+                      "form-label",
+                      {
+                        class: {
+                          "mb-2": _vm.showHelpText && _vm.field.helpText
+                        },
+                        attrs: { "label-for": _vm.field.attribute }
+                      },
+                      [
+                        _vm._v("\n            " + _vm._s(_vm.fieldLabel) + " "),
+                        _vm.field.required
+                          ? _c("span", { staticClass: "text-danger text-sm" }, [
+                              _vm._v(_vm._s(_vm.__("*")))
+                            ])
+                          : _vm._e()
+                      ]
+                    )
+                  : _vm._e()
               ])
             ],
             2

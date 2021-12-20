@@ -7,6 +7,7 @@
         <div :class="fieldLabelClasses">
           <slot>
             <form-label
+                v-if = "fieldLabel !=''"
                 :label-for="field.attribute"
                 :class="{ 'mb-2': showHelpText && field.helpText }"
             >
