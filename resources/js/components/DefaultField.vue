@@ -107,14 +107,14 @@ export default {
 
 .nova-grid-field-label {
   font-weight: 200;
-  margin-bottom: 0.4rem;
+  margin-bottom: 0.1rem;
   width: 100%;
 }
 
 .nova-grid-card-styles {
   display: flex; //ADDED
   flex-wrap: wrap; //ADDED
-  width: 270%; //ADDED
+  width: 170%; //ADDED
 
   > form {
     display: flex;
