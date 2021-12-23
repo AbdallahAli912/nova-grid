@@ -114,7 +114,7 @@ export default {
 .nova-grid-card-styles {
   display: flex; //ADDED
   flex-wrap: wrap; //ADDED
-  width: 170%; //ADDED
+  width: 100%; //ADDED
 
   > form {
     display: flex;
