@@ -57,6 +57,7 @@ export default {
   mounted() {
     if (this.hasSize) {
       this.$parent.$parent.$el.classList.add('nova-grid-card-styles');
+      this.$parent.$parent.$parent.$el.classList.add('card-overflow-x');
       // this.$refs['field-wrapper'].parentNode.classList.add(this.field.size)  //COMMENT THIS OUT
     }
   },
@@ -107,9 +108,18 @@ export default {
 
 .nova-grid-field-label {
   font-weight: 200;
-  margin-bottom: 0.1rem;
+  margin-bottom: 0.5rem;
   width: 100%;
 }
+
+input#employee[type="text"]:read-only,
+input#payment_type[type="text"]:read-only {
+  border: 0px;
+  background-color: transparent;
+  padding: 0px;
+}
+
+
 
 .nova-grid-card-styles {
   display: flex; //ADDED

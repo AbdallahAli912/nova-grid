@@ -171,7 +171,7 @@ exports = module.exports = __webpack_require__(5)(false);
 
 
 // module
-exports.push([module.i, "\n.nova-grid-wrapper {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -ms-flex-wrap: wrap;\n      flex-wrap: wrap;\n  width: 100%;\n  padding: 0.3rem;\n}\n.nova-grid-field-label {\n  font-weight: 200;\n  margin-bottom: 0.1rem;\n  width: 100%;\n}\n.nova-grid-card-styles {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -ms-flex-wrap: wrap;\n      flex-wrap: wrap;\n  width: 1700px;\n  overflow-x: auto;\n}\n.nova-grid-card-styles > form {\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -ms-flex-wrap: wrap;\n        flex-wrap: wrap;\n    width: 100%;\n}\n.nova-grid-card-styles > form .bg-30.flex.px-8.py-4 {\n      width: 100%;\n      display: -webkit-box;\n      display: -ms-flexbox;\n      display: flex;\n      -webkit-box-pack: end;\n          -ms-flex-pack: end;\n              justify-content: flex-end;\n}\n", ""]);
+exports.push([module.i, "\n.nova-grid-wrapper {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -ms-flex-wrap: wrap;\n      flex-wrap: wrap;\n  width: 100%;\n  padding: 0.3rem;\n}\n.nova-grid-field-label {\n  font-weight: 200;\n  margin-bottom: 0.5rem;\n  width: 100%;\n}\ninput#employee[type=\"text\"]:-moz-read-only,\ninput#payment_type[type=\"text\"]:-moz-read-only {\n  border: 0px;\n  background-color: transparent;\n  padding: 0px;\n}\ninput#employee[type=\"text\"]:read-only,\ninput#payment_type[type=\"text\"]:read-only {\n  border: 0px;\n  background-color: transparent;\n  padding: 0px;\n}\n.nova-grid-card-styles {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -ms-flex-wrap: wrap;\n      flex-wrap: wrap;\n  width: 1700px;\n  overflow-x: auto;\n}\n.nova-grid-card-styles > form {\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -ms-flex-wrap: wrap;\n        flex-wrap: wrap;\n    width: 100%;\n}\n.nova-grid-card-styles > form .bg-30.flex.px-8.py-4 {\n      width: 100%;\n      display: -webkit-box;\n      display: -ms-flexbox;\n      display: flex;\n      -webkit-box-pack: end;\n          -ms-flex-pack: end;\n              justify-content: flex-end;\n}\n", ""]);
 
 // exports
 
@@ -697,6 +697,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
   mounted: function mounted() {
     if (this.hasSize) {
       this.$parent.$parent.$el.classList.add('nova-grid-card-styles');
+      this.$parent.$parent.$parent.$el.classList.add('card-overflow-x');
       // this.$refs['field-wrapper'].parentNode.classList.add(this.field.size)  //COMMENT THIS OUT
     }
   },
