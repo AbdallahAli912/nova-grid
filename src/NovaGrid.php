@@ -4,6 +4,8 @@ namespace Nibri10\NovaGrid;
 
 use Laravel\Nova\Nova;
 use Laravel\Nova\Tool;
+use Illuminate\Http\Request;
+
 
 class NovaGrid extends Tool
 {
